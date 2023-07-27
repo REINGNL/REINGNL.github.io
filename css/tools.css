@@ -8,8 +8,13 @@ body {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    /* padding: 20px; */
-    /* margin: 0;  */
+
+  }
+
+  @media screen and (max-width: 1000px) {
+    header {
+      flex-direction: column;
+    }
   }
 ul {
   display: flex;
@@ -24,6 +29,17 @@ a img {
   width: 60px;
   margin: 0; 
   
+}
+.body{
+  padding-top: 20px;
+}
+.navigation li button {
+  margin-right: 20px;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  font-family: 'Lato', sans-serif;
 }
 
 .neon {
@@ -131,3 +147,7 @@ a img {
         display: block;
         margin: auto;
     }
+    .text .text2 .text3 p{
+      font-size: 70px;
+    }
+}
