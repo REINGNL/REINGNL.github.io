@@ -135,3 +135,48 @@ img {
 .footer{
   margin-top: 100px;
 }
+/* 
+@media (max-width: 768px) {
+  .text {
+    font-size: 1.5em; 
+  }
+
+  .supply img {
+    width: 10%; 
+    height: auto;
+  }
+} */
+
+.supply {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, fr)); /* Adjust the minmax value as needed */
+  grid-auto-flow: dense;
+}
+
+.s2 {
+  order: 2;
+}
+
+.s3 {
+  order: 3;
+}
+
+@media (max-width: 768px) {
+  .s2 {
+    order: 3;
+  }
+
+  .s3 {
+    order: 2;
+  }
+}
+
+@media (max-width: 568px) {
+  .s2 {
+    order: 1;
+  }
+
+  .s3 {
+    order: 2;
+  }
+}
