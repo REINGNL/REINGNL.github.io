@@ -1,0 +1,133 @@
+body {
+    background-color: rgb(19, 3, 36);
+
+   margin: 0; 
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /* padding: 20px; */
+    /* margin: 0;  */
+  }
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0; 
+}
+li {
+  margin: 0 10px;
+}
+a img {
+  width: 60px;
+  margin: 0; 
+  
+}
+
+.neon {
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    animation: neon-animation 1.5s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+  }
+  
+  @keyframes neon-animation {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 60px #ff00de;
+    }
+  }
+  
+  .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text {
+    margin-left: 40px;
+    color: white;
+    margin-top: 20px;
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .body img{
+    padding-left: 90px;
+  }
+
+  .body2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  
+  .text2 {
+    margin-left: 40px;
+    color: white;
+    margin-right: 20px;
+    font-size: 25px;
+    padding-right: 20px;
+    margin-top: 30px;
+
+    font-family: 'Lato', sans-serif;
+  } 
+  
+  .body3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text3 {
+    margin-left: 200px;
+    color: white;
+    margin-top: 30px;
+    font-size: 25px;
+    padding-left: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  @media screen and (max-width: 300px) {
+    .body, .body2, .body3 {
+        flex-direction: column;
+    }
+
+    .text, .text2, .text3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .body img, .body2 img, .body3 img {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .body, .body2, .body3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .text, .text2, .text3 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        margin-top: 20px;
+      }
+    .body img, .body2 img, .body3 img {
+        display: block;
+        margin: auto;
+    }
